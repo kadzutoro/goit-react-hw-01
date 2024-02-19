@@ -1,9 +1,13 @@
-export const FriendList = {{ list }} => {
+import Friend from "../Friend/Friend";
+
+const FriendList = ({ friends }) => {
     return (
         <ul>
-            {list.map(({friend}) =>(
-                <Friend key={friend.id} friend = {friend} />
+            {friends.map((friend) => (
+                <Friend key={friend.id} friend={friend} />
             ))}
         </ul>
     );
 };
+
+export default FriendList
