@@ -1,4 +1,4 @@
-import styles from "../Friend/Friend.module.css"
+import styles from "./Friend.module.css"
 const Friend = ({friend: {isOnline, avatar, name}}) => {
     return (
 <div className={styles.item}>
